@@ -36,15 +36,14 @@ function Header() {
                         >
                             <span className="content is-larg">Ama Frema</span>
                         </a>
-                        </div>
-                        </nav>
                         <Navigation
                          currentPage={currentPage} 
                          handlePageChange={handlePageChange}
                           />
                             {renderPage()}
-                            <main>
-                                </div>
+                            </div>
+                        </nav>
+                    </div>
     );
 }
 

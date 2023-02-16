@@ -8,13 +8,9 @@ function Resume() {
             Ama
             <span className="text-primary">Frema</span>
             </h1>
-            < className="subheading mb-5">
+            <div className="subheading mb-5">
             97 N Main St · Boylston, MA 01583 · (860) 816-1613 ·
-            <a href="mailto:
-
-            <a
-            className="button is-primary is-rounded"
-            href={process.env.PUBLIC_URL + "/ama-frema-resume.pdf"}
+            <a href={process.env.PUBLIC_URL + "/ama-frema-resume.pdf"}
             target="_blank" rel="noreferrer"
             >
                 <span className="icon">
@@ -31,9 +27,13 @@ function Resume() {
                     <li>Bootstrap, Phython, Nosql,firebase,restapi,Cloudinary</li>
                     <li>Git, Github, Heroku, VS Code, Slack</li>
                 </ul>
-                </ul>
+                {/* </ul> */}
             </div>
-            );
+        </div>
+        </div>
+        </section>
+        );
+
         }
 
         export default Resume;

@@ -1,6 +1,6 @@
 import React from "react";
 
-funtion Project (props) {
+function Project (props) {
     return (
         <div className="colums is desktop is-justify-content-center is flex-wrap-wrap is-flex-direction-row">
             {props.projects.map((project) => (

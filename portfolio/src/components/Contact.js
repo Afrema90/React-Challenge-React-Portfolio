@@ -4,17 +4,16 @@
 // a message
 
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
-import { useForm, ValidationError } from '@formspree/react';
+import { validateEmail } from '../utils/helpers';
+import { useForm} from '@formspree/react';
 //import Navigation from './components/Navigation';
-require('dotenv').config();
 
 function Contact() {
     const [state, handleSubmit] = useForm("contactForm");
 
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const [errorMessage, setErrorMessage] = useState('');
-    const { name, email, message } = formState;
+    const { name, email,} = formState;
 
     //const handleSubmit = (e) => {
     //    e.preventDefault();
@@ -32,7 +31,7 @@ function Contact() {
         return (
             <div>
         <p>Thanks for joining!</p>;
-        <>button className="button is middium is-primary is half m-6" onClick={()=> window.open("#contact")}>Back to About</button>
+        <button className="button is middium is-primary is half m-6" onClick={()=> window.open("#contact")}>Back to About</button>
         {/* This form button is not working. It was supposed to refresh the page so that a new page can be submitted but now it will just take you back to the About me*/}
         </div>
         );

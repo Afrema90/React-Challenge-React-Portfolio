@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer">
       <div className="content has-text-centered">
         <p>
-          <strong>Portfolio</strong> by <a href="
+          <strong>Portfolio</strong> by
           <a href="https://github.com/Afrema90" target="_blank" rel="noreferrer">
             Ama Frema
         </a>
@@ -16,13 +16,10 @@ function Footer() {
             LinkedIn
             </a>{" "}
             |{" "}{""}
-            <a
-            href="
-            </a>
-            <p>
+            </p>
             </div>
     </footer>
-    );
+  );
 }
 
 export default Footer;
