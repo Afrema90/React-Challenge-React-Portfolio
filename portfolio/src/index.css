@@ -2,15 +2,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
+    background-color: red;
 }
-
+.about-img {
+    width:300px;
+    height:400px
+    ;}
 .navbar, .navbar a {
     color: #fff;
     text-decoration: none;
     display: block;
     width: 100%;
-    background-color: aliceblue;
+    background-color: blue;
 }
 
 div.navbar-brand {
@@ -42,7 +45,13 @@ my-pic {
 }
 
 footer.footer {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    background-color: blueviolet;
+}
+
+.imgSize {
+    width: 600px;
+    height: 200px;
 }
 
 

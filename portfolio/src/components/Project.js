@@ -1,39 +1,43 @@
 import React from "react";
 
+const divStyle = {
+    width: "600px",
+    height: "400px",
+  };
+
 function Project (props) {
+    console.log(props);
     return (
         <div className="colums is desktop is-justify-content-center is flex-wrap-wrap is-flex-direction-row">
-            {props.projects.map((project) => (
-                <div className="column is-one-third" key={project.name}>
+                <div className="column is-one-third" key={props.name}>
                     <div className="card">
                         <div className="card-image">
                             <figure className="image is-4by3">
-                                <img src={project.image} alt={project.name} />
+                                <img className="imgSize" style={divStyle} src={props.image} alt={props.name} />
                             </figure>
                         </div>
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">{project.name}</p>
-                                    <p className="subtitle is-6">{project.category}</p>
+                                    <p className="title is-4">{props.name}</p>
+                                    <p className="subtitle is-6">{props.category}</p>
                                 </div>
                             </div>
                             <div className="content">
-                                {project.description}
+                                {props.description}
                                 <br />
                                 <br />
-                                <a href={project.deployed} target="_blank" rel="noreferrer">
+                                <a href={props.deployed} target="_blank" rel="noreferrer">
                                     Deployed Application
                                 </a>
                                 <br />
-                                <a href={project.github} target="_blank" rel="noreferrer">
+                                <a href={props.github} target="_blank" rel="noreferrer">
                                     GitHub Repository
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            ))}
         </div>
     );
 }
